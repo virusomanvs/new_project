@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>{% block pageTitle %}{% endblock %}</title>
+    <!-- Stylesheets -->
+    {% include "stylesheets.twig" %}
+</head>
+<body>
+    <div class="app-wrapper fw-height-1-1">
+        <!-- Block content -->
+        {% block content %}{% endblock %}
+        <!-- Block content end -->
+    </div>
+
+    <!-- Scripts -->
+    {% include "scripts.twig" %}
+</body>
+</html>

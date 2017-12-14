@@ -1,0 +1,10 @@
+@import "mixins/mixins"
+@import "mixins/retina_sprites"
+
+.icon
+  display: inline-block
+  vertical-align: middle
+
+@each $icon in mail
+  .icon-#{$icon}
+    +sprite(icon-#{$icon})

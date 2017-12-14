@@ -1,0 +1,91 @@
+.fw-reset
+  margin: 0
+  padding: 0
+  list-style: none
+  background-color: transparent
+  border: none
+  font-family: inherit
+  color: inherit
+  text-decoration: inherit
+
+@import "functions"
+@import "viewports"
+@import "display"
+@import "backgrounds-and-colors"
+@import "width"
+@import "height"
+@import "grid"
+@import "margins-and-paddings"
+@import "flex"
+@import "fonts"
+@import "border"
+@import "visibilities"
+@import "text"
+
+.fw-opacity-5
+  opacity: 0.5
+
+.fw-opacity-7
+  opacity: 0.7
+
+.fw-bottom-25-px
+  bottom: 25px
+
+.fw-dashed-link
+  border-bottom: 1px dashed #fff
+  text-decoration: none
+
+  &:hover
+    border-color: transparent
+
+.fw-absolute
+  position: absolute
+
+.fw-relative
+  position: relative
+
+@each $value in $top
+  .fw-top-#{$value}
+    top: $value
+
+.fw-top-100-percent
+  top: 100%
+
+@each $value in $bottom
+  .fw-bottom-#{$value}
+    bottom: $value
+
+.fw-bottom-100-percent
+  bottom: 100%
+
+@each $value in $left
+  .fw-left-#{$value}
+    left: $value
+
+.fw-left-100-percent
+  left: 100%
+
+@each $value in $right
+  .fw-right-#{$value}
+    right: $value
+
+.fw-right-100-percent
+  right: 100%
+
+.fw-box-shadow
+  border: solid 1px #ececec
+
+.fw-transition
+  transition: all 0.3s ease
+  
+.fw-z-index-1
+  z-index: 1
+  
+.fw-z-index-9999
+  z-index: 9999
+
+.fw-text-nowrap
+  white-space: nowrap
+
+.fw-list-style-none
+  list-style: none
